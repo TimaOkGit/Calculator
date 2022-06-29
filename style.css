@@ -1,0 +1,28 @@
+body
+{
+    text-align: center;
+    font-family: cursive;
+}
+
+#output
+{
+    margin: 75px auto 10px auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 25%;
+}
+
+#input
+{
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 25%;
+}
+
+button
+{
+    font-family: cursive;
+    font-size: larger;
+    width: 20%;
+}
