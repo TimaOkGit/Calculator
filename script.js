@@ -72,10 +72,10 @@ document.getElementById("+").onclick = function()
 
 document.getElementById("=").onclick = function()
 {
-    firstnum = document.getElementById("output").innerHTML
+    secondnum = document.getElementById("output").innerHTML
     if(operation == '+')
     {
-        ans = firstnum + secondnum
+        ans = parseInt(firstnum) + parseInt(secondnum)
     }
 
     document.getElementById("output").innerHTML = ans
