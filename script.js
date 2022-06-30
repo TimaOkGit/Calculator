@@ -78,5 +78,23 @@ document.getElementById("=").onclick = function()
         ans = parseInt(firstnum) + parseInt(secondnum)
     }
 
+    secondnum = document.getElementById("output").innerHTML
+    if(operation == '-')
+    {
+        ans = parseInt(firstnum) - parseInt(secondnum)
+    }
+
+    secondnum = document.getElementById("output").innerHTML
+    if(operation == '*')
+    {
+        ans = parseInt(firstnum) * parseInt(secondnum)
+    }
+
+    secondnum = document.getElementById("output").innerHTML
+    if(operation == '/')
+    {
+        ans = parseInt(firstnum) + parseInt(secondnum)
+    }
+
     document.getElementById("output").innerHTML = ans
 }
