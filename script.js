@@ -1,11 +1,6 @@
 
 alert("Press Buttons to use the calculator!")
 
-document.getElementById("c").onclick = function()
-{
-    document.getElementById("output").innerHTML = ""
-}
-
 document.getElementById("1").onclick = function()
 {
     document.getElementById("output").innerHTML += "1"
@@ -54,4 +49,34 @@ document.getElementById("9").onclick = function()
 document.getElementById("0").onclick = function()
 {
     document.getElementById("output").innerHTML += "0"
+}
+
+var operation
+var firstnum
+var secondnum
+var ans
+
+document.getElementById("c").onclick = function()
+{
+    document.getElementById("output").innerHTML = ""
+    operation = ''
+    firstnum = ""
+}
+
+document.getElementById("+").onclick = function()
+{
+    operation = '+'
+    firstnum = document.getElementById("output").innerHTML
+    document.getElementById("output").innerHTML = ""
+}
+
+document.getElementById("=").onclick = function()
+{
+    firstnum = document.getElementById("output").innerHTML
+    if(operation == '+')
+    {
+        ans = firstnum + secondnum
+    }
+
+    document.getElementById("output").innerHTML = ans
 }
